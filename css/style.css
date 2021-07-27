@@ -21,7 +21,6 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-
 }
 /* Small Screen */
 @media (min-width : 768px) {
@@ -212,6 +211,8 @@ flex: 1 1 auto;
         font-size: 16px;
         font-weight: 600;
         line-height: 1.8;
+        width: 350px;
+        margin:20px auto;
     }
 }
 
@@ -279,6 +280,39 @@ flex: 1 1 auto;
         margin-bottom: 10px;
     }
 }
+
+@media (max-width : 420px){
+
+
+    .big-titel { 
+        width: 100%;
+     }
+    .big-titel h1{ 
+        font-size: 40px;
+        width: 100%;
+        margin: 30px auto 16px;
+ }
+   
+ .big-titel p { 
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.8;
+    width: 100%;
+    margin: 5px auto;
+ }
+    .big-imge{ 
+        width: 350px;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+
+  
+
+    .big-titel .word{ 
+        width: 100%;
+    }
+
+}
 /* END SECTION WITH BIG IMGES  */
 
 /* START INUPT */
@@ -331,10 +365,10 @@ flex: 1 1 auto;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        padding: 5px 0px;
+        padding: 5px 10px;
     }
     .input .container #text,.input .container .but2 {
-        width: 400px;
+        width: 100%;
     }
 
     .input .container .but2{
@@ -476,11 +510,11 @@ flex: 1 1 auto;
 
     }
 
-    .cont-cards .card1, .cont-cards .card3{
-        align-self: center;
+    .Statistics .topic p{ 
+        width: 350px;
     }
 
-
+    
     .cont-cards .card{
      width: 100%;
      display: flex;
@@ -494,6 +528,16 @@ flex: 1 1 auto;
         margin: -30px 0px 10px;
     }
 
+
+    .cont-cards .card1, .cont-cards .card3{
+        align-self: center;
+    }
+
+    .cont-cards .card2{
+    margin-left: 0px;
+    margin-right: 0px;
+
+    }
 
     .cont-cards .card1::after, .cont-cards .card2::after {
 
@@ -522,22 +566,45 @@ flex: 1 1 auto;
     top: 0;
     left: 0;
     z-index: -1;
+    display: flex;
+    justify-content: center;
 }
-
+.today .container{ 
+    height: 100%;
+}
 .today .big-titel {
+  
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
+
 .today .container h1{
     color: #ffffff;
     font-size: 32px;
+  
 }
 .today .container h1 , .today .container button {
     width: 350px;
 }
 
+@media (max-width : 400px){
 
+
+    .today .container h1 {
+        font-size: 28px;
+    }
+
+    .today .container h1 {
+        width: 300px;
+    }
+    .today .container button {
+        margin: 0;;
+    }
+}
 
 
 /* END TODAY */
