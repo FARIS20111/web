@@ -39,7 +39,16 @@
       </div><!--login-->
     </div><!--nav-right-->
     <div class="nav-burger">
-      <i class="fas fa-bars"></i>
+      <i class="fas fa-bars" id="burger"></i>
+    </div>
+    <div class="phone-mune" id="phone-mune">
+      <ul>
+        <li><a href="">features</a></li>
+        <li><a href="">pricing</a></li>
+        <li><a href="">resources</a></li>
+      </ul>
+      <button class="but" >login</button>
+      <button class="but but2" >sing up</button>
     </div>
     </div> <!-- container-->
   </nav> <!-- nav-->
@@ -185,7 +194,21 @@
 <!-- END FOOTER -->
 
 
+<script> 
 
+  let icon = document.getElementById("burger") ;
+  let phone = document.getElementById("phone-mune") ;
+
+  phone.style.top = "-375px" ;
+  icon.onclick= function(){ 
+    if(phone.style.top == "-375px" ){
+      phone.style.top = "-10px"
+
+    }else(
+      phone.style.top = "-375px"
+    )
+  }
+</script>
 
 </body>
 </html>
