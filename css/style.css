@@ -126,13 +126,70 @@
 .nav-burger i { 
 
     color: var(--mainTitelColer--); 
-    font-size: 24px;
+    font-size: 22px;
+    color: var(--titelColer--);
+    cursor: pointer;
 }
 .nav-burger { 
 display: flex;
 justify-content: flex-end;
 display: none;
 flex: 1 1 auto;
+position: relative;
+
+}
+
+.nav-burger i { 
+
+    color: var(--mainTitelColer--); 
+    font-size: 22px;
+    color: var(--titelColer--);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.container .phone-mune{ 
+    position: absolute;
+    top: -375px;
+    right: 0px;
+    width: 100%;
+    height: 350px;
+    padding: 15px ;
+    background-color: var(--maineColer--);
+    text-align: center;
+    transition: .5s;
+}
+
+.container .phone-mune ul { 
+    list-style: none;
+}
+.container .phone-mune a { 
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 13px 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 21px;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+    font-weight: 700;
+    width: 80%;
+}
+.container .phone-mune a:hover { 
+    color:var(--scondColer--) ;
+}
+.container .phone-mune li:last-child a { 
+    border-bottom: 1px solid var(--titelColer--);
+    margin-bottom: 20px;
+}
+.container .phone-mune .but {
+    display: block;
+    width: 100%;
+    margin: auto;
+    color: #fff;
+    font-weight: 700;
+    font-size: 21px;
 }
 @media (max-width : 768px) {
     .nav-burger{
